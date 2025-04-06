@@ -1,0 +1,34 @@
+// UZH theme by Simon Schwab
+
+/*-- scss:defaults --*/
+
+// colors document
+$link-color: #FC4C02;
+$code-block-bg: #EFEFEF;
+$code-block-border-left: #A5D233;
+$table-border-color: #DEE2E6; // quarto bug, callout border box disappears
+
+/*-- scss:rules --*/
+
+// headings color
+h1.title, h1, h2, h3, h4 {
+    color: #001E7C;
+    font-weight: bold;
+}
+
+// table font size
+.kable-table {
+  font-size: 85%;
+}
+
+// logo above TOC
+#TOC::before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin: 2em 20px 30px 20px;
+  background-image: url("uzh-logo.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

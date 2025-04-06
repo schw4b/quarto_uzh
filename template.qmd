@@ -1,0 +1,68 @@
+---
+title: 'Project Title'
+subtitle: 'Subtitle'
+author: 
+  - Author One
+  - Author Two
+date: last-modified
+abstract: 'Description of the project.'
+lang: en
+format:
+  html:
+    toc: true
+    theme: uzh.scss
+    df-print: kable
+    embed-resources: true
+    code-fold: true
+---
+
+::: {.callout-tip appearance="simple"}
+This is a Quarto document template styled with the official UZH look and feel. The theme is defined in the `uzh.scss` file. For detailed information and documentation, please visit the [Quarto website](https://quarto.org/).
+:::
+
+## Objectives
+
+## Data import
+
+```{r}
+set.seed(2025)
+data = data.frame(x = rnorm(100), y = rnorm(100))
+```
+
+```{r}
+col = data.frame(blue    = "#0028A5",
+                 cyan    = "#4AC9E3",
+                 apple   = "#A5D233",
+                 gold    = "#FFC845",
+                 orange  = "#FC4C02",
+                 berry   = "#BF0D3E",
+                 black   = "#000000",
+                 blue.v4 = "#001E7C"
+)
+```
+
+## Data processing
+
+## Quality control
+
+## Descriptive statistics
+
+```{r}
+#| fig-height: 3.8
+#| fig-width: 7
+
+par(mfrow = c(1,2))
+plot(x = data$x, y = data$y, col = col$berry, pch = 19, xlab = "x", ylab = "y")
+hist(x = data$y, col = col$apple, main = NULL, xlab = "y")
+```
+
+## Primary analysis
+
+## Secondary analysis
+
+## Computing information
+
+```{r}
+sessionInfo()
+```
+
