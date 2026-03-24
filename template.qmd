@@ -17,7 +17,7 @@ format:
 ---
 
 ::: {.callout-tip appearance="simple"}
-This is a Quarto document template styled with the official UZH look and feel. The theme is defined in the `uzh.scss` file. For detailed information and documentation, please visit the [Quarto website](https://quarto.org/).
+This is a Quarto document template styled with the official UZH look and feel. The theme is defined in the `uzh.scss` file. For documentation and help, please visit the [Quarto website](https://quarto.org/).
 :::
 
 ## Objectives
@@ -32,12 +32,13 @@ data = data.frame(x = rnorm(100), y = rnorm(100))
 ```{r}
 col = data.frame(blue    = "#0028A5",
                  cyan    = "#4AC9E3",
-                 apple   = "#A5D233",
+                 apple   = "#A4D233",
                  gold    = "#FFC845",
                  orange  = "#FC4C02",
                  berry   = "#BF0D3E",
                  black   = "#000000",
-                 blue.v4 = "#001E7C"
+                 white   = "#FFFFFF",
+                 blue.4  = "#001E7C"
 )
 ```
 
